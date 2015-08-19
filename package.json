@@ -1,6 +1,6 @@
 {
   "name": "lansa",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "CLI project deployment tracker",
   "homepage": "https://github.com/ericmann/lansa",
   "repository": "ericmann/lansa",
@@ -12,7 +12,7 @@
   "files": [
     "lib"
   ],
-  "main": "lib/index.js",
+  "main": "lib/lansa.js",
   "keywords": [
     "new",
     "relic",
@@ -21,7 +21,7 @@
     "deployment"
   ],
   "bin": {
-    "lansa": "./bin/lansa"
+    "lansa": "bin/lansa"
   },
   "devDependencies": {
     "gulp": "^3.6.0",
@@ -39,6 +39,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.0",
+    "commander": "^2.8.1",
     "yamljs": "^0.2.3"
   }
 }
