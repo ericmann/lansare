@@ -10,11 +10,7 @@
     ],
     "indent": [
       2,
-      2
-    ],
-    "one-var": [
-      2,
-      "never"
+      "tab"
     ],
     "consistent-return": 0,
     "no-use-before-define": [
@@ -24,7 +20,7 @@
     "space-before-function-paren": [
       2,
       {
-        "anonymous": "always",
+        "anonymous": "never",
         "named": "never"
       }
     ],
@@ -33,10 +29,6 @@
       "always"
     ],
     "array-bracket-spacing": [
-      2,
-      "never"
-    ],
-    "space-in-parens": [
       2,
       "never"
     ],
@@ -68,7 +60,7 @@
     "space-infix-ops": 2,
     "no-eval": 2,
     "no-with": 2,
-    "eol-last": 2,
+    "eol-last": 0,
     "comma-dangle": [
       2,
       "never"
@@ -130,7 +122,7 @@
     "no-return-assign": 2,
     "no-script-url": 2,
     "no-sequences": 2,
-    "no-unused-expressions": 2,
+    "no-unused-expressions": 1,
     "yoda": 2,
     "no-delete-var": 2,
     "no-label-var": 2,
@@ -139,15 +131,15 @@
     "no-undef-init": 2,
     "no-undef": 2,
     "no-unused-vars": [
-      2,
+      1,
       {
         "vars": "all",
         "args": "after-used"
       }
     ],
-    "camelcase": 2,
+    "camelcase": 0,
     "comma-spacing": 2,
-    "new-cap": 2,
+    "new-cap": 1,
     "new-parens": 2,
     "no-array-constructor": 2,
     "no-mixed-spaces-and-tabs": [
@@ -159,6 +151,7 @@
     "no-trailing-spaces": 2,
     "no-underscore-dangle": 2,
     "no-wrap-func": 2,
+    "no-process-exit": 0,
     "semi-spacing": [
       2,
       {
@@ -167,7 +160,8 @@
       }
     ],
     "semi": 2,
-    "space-return-throw-case": 2
+    "space-return-throw-case": 2,
+    "space-unary-ops": 1
   },
   "env": {
     "node": true,
