@@ -20,6 +20,9 @@
     "log",
     "deployment"
   ],
+  "bin": {
+    "lansa": "./bin/lansa"
+  },
   "devDependencies": {
     "gulp": "^3.6.0",
     "gulp-eslint": "^0.15.0",
@@ -33,5 +36,9 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.0",
+    "yamljs": "^0.2.3"
+  }
 }
