@@ -5,16 +5,15 @@
 ## Install
 
 ```sh
-$ npm install --save lansa
+$ npm install --global lansa
 ```
 
+## CLI Usage
 
-## Usage
+## Project Usage
 
 ```js
-var lansa = require('lansa');
-
-lansa('Rainbow');
+var lansa = require( 'lansa' );
 ```
 
 ## License
