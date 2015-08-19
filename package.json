@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "CLI project deployment tracker",
   "homepage": "https://github.com/ericmann/lansa",
-  "repository": "ericmann/lansa",
+  "repository": "https://github.com/ericmann/lansa.git",
   "author": {
     "name": "Eric Mann",
     "email": "eric@eamann.com",
@@ -21,7 +21,7 @@
     "deployment"
   ],
   "bin": {
-    "lansa": "bin/lansa"
+    "lansa": "./bin/lansa"
   },
   "devDependencies": {
     "gulp": "^3.6.0",
