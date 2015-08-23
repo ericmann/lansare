@@ -1,15 +1,27 @@
 'use strict';
-var gulp = require( 'gulp' );
-var eslint = require( 'gulp-eslint' );
-var excludeGitignore = require( 'gulp-exclude-gitignore' );
-var mocha = require( 'gulp-mocha' );
-var istanbul = require( 'gulp-istanbul' );
-var nsp = require( 'gulp-nsp' );
-var plumber = require( 'gulp-plumber' );
+var gulp = require( 'gulp' ),
+	path = require( 'path' ),
+	eslint = require( 'gulp-eslint' ),
+	excludeGitignore = require( 'gulp-exclude-gitignore' ),
+	mocha = require( 'gulp-mocha' ),
+	istanbul = require( 'gulp-istanbul' ),
+	gulpIgnore = require( 'gulp-ignore' ),
+	nsp = require( 'gulp-nsp' ),
+	plumber = require( 'gulp-plumber' );
+
+/**
+ * I'm lazy and don't want to run the gulpfile through eslint ...
+ */
+function excludeGulpfile() {
+	var gulpFile = path.resolve( 'gulpfile.js' );
+
+	return gulpIgnore.exclude( [gulpFile] );
+}
 
 gulp.task( 'static', function() {
 	return gulp.src( '**/*.js' )
 		.pipe( excludeGitignore() )
+		.pipe( excludeGulpfile() )
 		.pipe( eslint() )
 		.pipe( eslint.format() )
 		.pipe( eslint.failAfterError() );
