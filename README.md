@@ -28,7 +28,8 @@ First and foremost, you need to define a `.lansarc` file in the root of your pro
 	            "name"       : "Application Name in New Relic",
 				"nrid"       : "Application ID in New Relic",
 				"api_key"    : "User API Key in New Relic"		        
-	        }
+	        },
+	        "local"     : {}
 	    }
 	}
 }
@@ -57,6 +58,8 @@ New log entries will be appended in the format:
 ```
 Date | User | Project | Environment | Description | Changelog | Revision
 ```
+
+If an environment is meant to log to a file _only_, then the configuration object can be left empty in `.lansarc`.
 
 ## License
 
