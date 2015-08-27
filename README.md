@@ -16,21 +16,19 @@ First and foremost, you need to define a `.lansarc` file in the root of your pro
 
 ```js
 {
-	"app": {
-		"projects": {
-		    "{{project name}}": {
-		        "production": {
-		            "name"       : "Application Name in New Relic",
-					"nrid"       : "Application ID in New Relic",
-					"api_key"    : "User API Key in New Relic"
-		        },
-		        "staging"   : {
-		            "name"       : "Application Name in New Relic",
-					"nrid"       : "Application ID in New Relic",
-					"api_key"    : "User API Key in New Relic"		        
-		        }
-		    }
-		}
+	"projects": {
+	    "{{project name}}": {
+	        "production": {
+	            "name"       : "Application Name in New Relic",
+				"nrid"       : "Application ID in New Relic",
+				"api_key"    : "User API Key in New Relic"
+	        },
+	        "staging"   : {
+	            "name"       : "Application Name in New Relic",
+				"nrid"       : "Application ID in New Relic",
+				"api_key"    : "User API Key in New Relic"		        
+	        }
+	    }
 	}
 }
 ```
