@@ -1,6 +1,7 @@
 # lansa [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > CLI project deployment tracker
 
+Lansa is a project that allows for developers to track the deployment of new code from the same CLI they use to deploy their projects in the first place. By default, it ships with the ability to track deployments either against New Relic or against a static text file.
 
 ## Install
 
@@ -38,10 +39,24 @@ This configuration will allow for multiple projects to be deployed from the same
 Once defined, a deployment can be tracked in New Relic by invoking Lansa at the command line:
 
 ```sh
-lansa {{project name}}:environment -d "Description" -c "Changelog" -r "Revision ID" -u "User"
+lansa {{project name}}:{{environment}} -d "Description" -c "Changelog" -r "Revision" -u "User"
 ```
 
 All command line flags except for the changelog are required.
+
+### Logfile Tracking
+
+To log to a static file instead of New Relic, pass `log` along with the `--dispatcher` flag and specify a `--logfile` to which the system should write. Lansa will automatically append to the logfile.
+
+```sh
+lansa {{project name}}:{{environment}} -d "Description" -c "Changelog" -r "Revision" -u "User" --dispatcher log --logfile log.txt
+```
+
+New log entries will be appended in the format:
+
+```
+Date | User | Project | Environment | Description | Changelog | Revision
+```
 
 ## License
 
