@@ -1,6 +1,6 @@
 {
   "name": "lansa",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "CLI project deployment tracker",
   "homepage": "https://github.com/ericmann/lansa",
   "repository": "https://github.com/ericmann/lansa.git",
