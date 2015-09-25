@@ -1,3 +1,4 @@
 node_modules
 coverage
 .lansarc
+npm-debug.log
