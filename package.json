@@ -10,7 +10,8 @@
     "url": "https://eamann.com"
   },
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ],
   "main": "lib/lansa.js",
   "keywords": [
