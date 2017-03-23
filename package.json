@@ -1,9 +1,9 @@
 {
-  "name": "lansa",
-  "version": "1.0.1",
+  "name": "lansare",
+  "version": "1.0.2",
   "description": "CLI project deployment tracker",
-  "homepage": "https://github.com/ericmann/lansa",
-  "repository": "https://github.com/ericmann/lansa.git",
+  "homepage": "https://github.com/ericmann/lansare",
+  "repository": "https://github.com/ericmann/lansare.git",
   "author": {
     "name": "Eric Mann",
     "email": "eric@eamann.com",
@@ -13,7 +13,7 @@
     "lib",
     "bin"
   ],
-  "main": "lib/lansa.js",
+  "main": "lib/lansare.js",
   "keywords": [
     "new",
     "relic",
@@ -22,7 +22,7 @@
     "deployment"
   ],
   "bin": {
-    "lansa": "./bin/lansa"
+    "lansare": "./bin/lansare"
   },
   "devDependencies": {
     "gulp": "^3.6.0",

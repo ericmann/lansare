@@ -2,7 +2,7 @@
 
 var assert = require( 'assert' );
 
-describe( 'lansa', function() {
+describe( 'lansare', function() {
 	it( 'works', function() {
 		assert( true );
 	} );
