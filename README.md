@@ -1,7 +1,7 @@
 # lansare [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > CLI project deployment tracker
 
-Lansa is a project that allows for developers to track the deployment of new code from the same CLI they use to deploy their projects in the first place. By default, it ships with the ability to track deployments either against New Relic or against a static text file.
+Lansare is a project that allows for developers to track the deployment of new code from the same CLI they use to deploy their projects in the first place. By default, it ships with the ability to track deployments either against New Relic or against a static text file.
 
 ## Install
 
@@ -70,5 +70,5 @@ MIT © [Eric Mann](https://eamann.com)
 [npm-url]: https://npmjs.org/package/lansare
 [travis-image]: https://travis-ci.org/ericmann/lansare.svg?branch=master
 [travis-url]: https://travis-ci.org/ericmann/lansare
-[daviddm-image]: https://david-dm.org/ericmann/lansaresvg?theme=shields.io
+[daviddm-image]: https://david-dm.org/ericmann/lansare.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/ericmann/lansare
